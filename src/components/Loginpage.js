@@ -18,13 +18,13 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Form validation
+ 
     if (!email || !password) {
       setErrorMessage("Please enter email and password");
       return;
     }
 
-    // Authenticate user
+    
     const users = [
       {
         id: 1,
@@ -35,7 +35,7 @@ const Login = () => {
         age: 20,
         country: "United States"
       }
-      // Add other user data from the JSON file here
+     
     ];
 
     const user = users.find(
@@ -43,7 +43,7 @@ const Login = () => {
     );
 
     if (user) {
-      // Redirect to profile page
+      
       console.log("Redirect to Profilepage");
     } else {
       setErrorMessage("Invalid email or password");
