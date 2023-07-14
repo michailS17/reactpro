@@ -43,7 +43,7 @@ const Registration = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Form validation
+   
     if (
       !fullName ||
       !email ||
@@ -62,7 +62,7 @@ const Registration = () => {
       return;
     }
 
-    // Add the new user to the users array
+  
     const users = [
       {
         id: 1,
@@ -73,7 +73,7 @@ const Registration = () => {
         age: 20,
         country: "United States"
       }
-      // Add other user data from the JSON file here
+     
     ];
 
     const newUser = {
@@ -89,7 +89,7 @@ const Registration = () => {
     users.push(newUser);
     console.log("User registered successfully");
 
-    // Redirect to login page
+   
     console.log("Redirect to Login");
   };
 
