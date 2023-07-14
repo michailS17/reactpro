@@ -20,7 +20,7 @@ const Profile = () => {
     
     ];
 
-    const currentUser = users.find((user) => user.id === 1); // Assuming the current user is John Doe
+    const currentUser = users.find((user) => user.id === 1);
 
     setUser(currentUser);
   }, []);
