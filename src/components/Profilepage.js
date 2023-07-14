@@ -6,7 +6,7 @@ const Profile = () => {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    // Fetch user data from the JSON file or API
+    
     const users = [
       {
         id: 1,
@@ -17,7 +17,7 @@ const Profile = () => {
         age: 20,
         country: "United States"
       }
-      // Add other user data from the JSON file here
+    
     ];
 
     const currentUser = users.find((user) => user.id === 1); // Assuming the current user is John Doe
